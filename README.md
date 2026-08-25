@@ -176,7 +176,7 @@ npm run build
 
 ## Security Considerations and Limitations
 
-- This release implements secure generation, local password analysis, and explicit HIBP password breach checking. Policy analysis and reporting are not implemented yet.
+- This release implements secure generation, local password analysis, explicit HIBP password breach checking, policy analysis, and sanitized security reporting.
 - Entropy is an estimate based on observed character categories; it does not account for password reuse, leaks, attacker dictionaries, or all human-choice behavior.
 - Pattern detection is heuristic and may miss patterns or produce occasional false positives. It should support, not replace, expert review and password-manager guidance.
 - Clipboard access depends on browser permissions and secure-context support. If it fails, the value remains available for manual copying.
