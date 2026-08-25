@@ -136,21 +136,6 @@ npm run dev
 
 This toolkit is intended for local security review and educational use. It does not replace a full security program, a password-manager policy, identity controls, or a formal risk assessment.
 
-Password
-	|
-	v
-Local SHA-1
-	|
-	v
-5-character prefix ----------> HIBP range endpoint
-	|                                  |
-	|                                  v
-	|                            Hash suffixes
-	|                                  |
-	+---------- local comparison <-----+
-						  |
-						  v
-				  Breach result
 ```
 
 The breach request is explicit; analyzing a password does not automatically contact HIBP. A successful response produces either `found` with an occurrence count or `not_found`. A failed request is reported as unavailable and is never presented as proof that the password is safe.
